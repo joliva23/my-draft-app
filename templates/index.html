@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>My Draft App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/dataTables.bootstrap.min.css') }}">
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+  </head>
+
+  <!-- color palatte: background=#303841, selected dark=#3A4750, nav bar=#00ADB5, font=#EEEEEE -->
+
+  <body>
+    <!-- Begin page content -->
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>My Draft App</h1>
+        <p>The My Draft App allows fantasy players to draft the way they want to draft and not confined by the tools provided by their league's platform.</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
+        </p>
+        <p>Already a member</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Login</a>
+        </p>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type=text/javascript src="{{url_for('static', filename='js/jquery.js') }}"></script>
+    <script type=text/javascript src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type=text/javascript src="{{url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+    <script type=text/javascript src="{{url_for('static', filename='js/dataTables.bootstrap.min.js') }}"></script>
+  </body>
+</html>
